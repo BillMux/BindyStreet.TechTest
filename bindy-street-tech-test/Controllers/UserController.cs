@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace BindyStreet.TechTest.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("users")]
     public class UserController : ControllerBase
     {
         private IUserRepository _userRepository;
