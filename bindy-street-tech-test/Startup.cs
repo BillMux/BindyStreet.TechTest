@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace bindy_street_tech_test
+namespace BindyStreet.TechTest
 {
     public class Startup
     {

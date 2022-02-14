@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace bindy_street_tech_test
+namespace BindyStreet.TechTest
 {
     public class Program
     {

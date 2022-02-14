@@ -1,4 +1,4 @@
-﻿namespace bindy_street_tech_test
+﻿namespace BindyStreet.TechTest
 {
     public class Company
     {

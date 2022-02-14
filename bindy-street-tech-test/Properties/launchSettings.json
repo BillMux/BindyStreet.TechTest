@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "bindy_street_tech_test": {
+    "BindyStreet.TechTest": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BindyStreet.TechTest.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace bindy_street_tech_test.Controllers
+namespace BindyStreet.TechTest.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -24,10 +25,11 @@ namespace bindy_street_tech_test.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Userr>> Get()
+        public IEnumerable<User> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new Userr
+            return Enumerable.Range(1, 5).Select(index => new User
+
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),

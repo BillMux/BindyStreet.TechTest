@@ -1,6 +1,6 @@
 using System;
 
-namespace bindy_street_tech_test
+namespace BindyStreet.TechTest.Models
 {
     public class User
     {
