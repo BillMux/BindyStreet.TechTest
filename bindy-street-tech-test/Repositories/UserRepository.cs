@@ -11,6 +11,13 @@ namespace BindyStreet.TechTest.Repositories
         {
             var users = new List<User>();
 
+            AddMockedData(users);
+
+            return users;
+        }
+
+        private static void AddMockedData(List<User> users)
+        {
             users.Add(new User()
             {
                 Id = Guid.Parse("11111111-1111-1111-1111-111111111111"),
@@ -290,8 +297,6 @@ namespace BindyStreet.TechTest.Repositories
                     BS = "target end-to-end models"
                 }
             });
-
-            return users;
         }
     }
 }
