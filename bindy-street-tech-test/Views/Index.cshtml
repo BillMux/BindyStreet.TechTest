@@ -1,0 +1,27 @@
+﻿@using BindyStreet.TechTest.Models
+
+@model IEnumerable<User>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Users</title>
+</head>
+<body>
+    <div id="usersList">
+        @foreach (User user in Model)
+        {
+            <div class="user-section">
+                <div class="user-full-name">@user.Name</div>
+                <div class="user-username">@user.Username</div>
+                <div class="user-email">@user.Email</div>
+                <div class="user-address">@user.Address.Street, @user.Address.Suite, @user.Address.City, @user.Address.ZipCode</div>
+                <div class="user-lng-lat">@user.Address.Geo.Lat, @user.Address.Geo.Lng</div>
+                <div class="user-phone">@user.Phone</div>
+                <div class="user-website">@user.Website</div>
+                <div class="user-company">@user.Company.Name</div>
+                <div class="user-company-phrase">@user.Company.CatchPhrase @user.Company.BS</div>
+            </div>
+        }
+    </div>
+</body>
+</html>
